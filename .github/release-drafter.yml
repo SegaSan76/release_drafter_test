@@ -1,0 +1,10 @@
+name-template: 'v$NEXT_MAJOR_VERSION'
+tag-template: 'v$NEXT_MAJOR_VERSION'
+version-template: '$MAJOR'
+change-template: '- $TITLE ($URL)'
+replacers:
+  - search: '/([A-Z]+-[0-9]+)/g'
+    replace: '[$1](https://anchorfree.atlassian.net/browse/$1)'
+template: |
+  ## Changes
+  $CHANGES
